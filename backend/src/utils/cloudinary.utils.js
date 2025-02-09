@@ -1,7 +1,7 @@
 import { configDotenv } from "dotenv";
 configDotenv({ path: "./.env" });
 import { v2 as cloudinary } from "cloudinary";
-import { ApiError } from "../utils/ApiError.js";
+import { ApiError } from "./ApiError.js";
 import streamifier from "streamifier";
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
